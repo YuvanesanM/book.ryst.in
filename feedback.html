@@ -47,9 +47,6 @@
   .loading,.notfound{text-align:center;color:var(--muted2);font-size:13.5px;padding:60px 10px}
   .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:9px;font-size:12.5px;opacity:0;transition:.25s;z-index:20}
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-  .wa-float{position:fixed;right:18px;bottom:22px;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(37,211,102,.42);z-index:60;transition:.15s;text-decoration:none}
-  .wa-float:hover{transform:scale(1.06);box-shadow:0 10px 26px rgba(37,211,102,.52)}
-  .wa-float svg{width:29px;height:29px;display:block}
 </style>
 </head>
 <body>
@@ -58,9 +55,6 @@
   <div class="card" id="card"><div class="loading">Loading…</div></div>
 </div>
 <div class="toast" id="toast"></div>
-<a class="wa-float" href="https://wa.me/917530011770?text=Hi!%20I'd%20like%20to%20know%20more%20about%20Studio%20RYST" target="_blank" rel="noopener" aria-label="Chat with Studio RYST on WhatsApp" title="Chat with us on WhatsApp">
-  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M16.004 3C9.377 3 4 8.373 4 15c0 2.31.652 4.47 1.78 6.307L4 29l7.86-1.746A11.94 11.94 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3zm6.98 16.98c-.297.836-1.474 1.53-2.41 1.727-.64.135-1.474.243-4.286-.92-3.596-1.49-5.91-5.14-6.09-5.377-.176-.238-1.454-1.936-1.454-3.693 0-1.756.914-2.617 1.24-2.976.297-.325.65-.406.867-.406.217 0 .434.002.624.011.2.01.468-.076.732.56.297.72.998 2.486 1.084 2.666.087.18.144.39.03.628-.114.238-.172.386-.34.594-.17.207-.356.462-.508.62-.17.176-.348.368-.15.72.198.353.878 1.45 1.885 2.348 1.294 1.155 2.386 1.512 2.74 1.68.353.17.56.144.766-.086.207-.23.882-1.03 1.118-1.383.235-.353.47-.294.792-.176.325.117 2.06.972 2.414 1.148.353.176.588.264.674.412.087.148.087.856-.21 1.693z"/></svg>
-</a>
 <script>
 const PROXY_URL = 'https://ryst-109a-proxy.onrender.com/studio';
 const token = new URLSearchParams(location.search).get('t') || '';
